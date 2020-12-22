@@ -16,5 +16,5 @@ Hello, I am YTG123. I do some programming in my free time.
 * And watch YouTube videos.
 
 ## My Projects
-[My Minecraft Mods](./Minecraft-Mods.md)
+[My Minecraft Mods](./Minecraft-Mods)
 
