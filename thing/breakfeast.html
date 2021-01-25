@@ -2,11 +2,26 @@
 <html>
 <head>
   <script defer type="text/javascript">
-    const eggExists = prompt("Does egg exist? (true/false)")
+    let toDie = false;
+    const eggExists = prompt("Does egg exist? (true/false)");
+    
+    if (eggExists != "true") toDie = true;
     
     if (eggExists == "true") {
-      
-    } else alert("you're bad")
+      const panExists = prompt("Does pan exist? (true/false)");
+      if (panExists != "true") toDie = true;
+      else {
+        alert("Moved egg to pan.")
+        setTimeout(() => {
+          alert("Flipped egg");
+          setTimeout(() => {
+            alert("Cutting cucumbers...")
+            alert("Done.")
+          }, 90000);
+        }, 90000);
+      }
+    }
+    if (toDie) alert("you're bad");
   </script>
 </head>
 </html>
